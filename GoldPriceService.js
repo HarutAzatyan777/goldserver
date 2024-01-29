@@ -1,11 +1,10 @@
 // GoldPriceService.js
 import fetch from 'node-fetch';
 
-
 class GoldPriceService {
   static async getGoldPrices() {
     try {
-      const apiUrl = 'https://metals-api.com/api/latest?access_key=fy7i0i58duq841m3zw4utmsq2oa21qdn4r9ds8wyn0fj9hdzu3qiisga23i5&base=USD&symbols=XAU%2CXAG%2CXPD%2CXPT%2CXRH'; // Replace with your actual API endpoint
+      const apiUrl = 'https://metals-api.com/api/latest?access_key=nfy7i0i58duq841m3zw4utmsq2oa21qdn4r9ds8wyn0fj9hdzu3qiisga23i5&base=USD&symbolsn=XAU%2CXAG%2CXPD%2CXPT%2CXRH'; // Replace with your actual API endpoint
 
       const response = await fetch(apiUrl);
 
@@ -50,5 +49,3 @@ class GoldPriceService {
 }
 
 export default GoldPriceService;
-
-
