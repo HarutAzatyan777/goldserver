@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import GoldPriceService from './GoldPriceService.js';
+import GoldPriceController from './GoldPriceController.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -15,6 +16,7 @@ app.get('/gold-prices', async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: 'Internal Server Error' });
   }
+  
 });
 
 app.listen(PORT, () => {
